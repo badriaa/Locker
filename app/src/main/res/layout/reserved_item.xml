@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:weightSum="3">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="0.5"
+        android:src="@drawable/ic_notif_low" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLockerNumberRItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Locker Number"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvUsernameRItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Username"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/tvStudentIdRItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Student ID"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/tvBookingDateRItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Booking Date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/green" />
+
+        <TextView
+            android:id="@+id/tvEndingDateRItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Booking Date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivPopupRItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="0.5"
+        android:src="@drawable/ic_popupmenu" />
+</LinearLayout>

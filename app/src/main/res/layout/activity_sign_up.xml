@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayoutSignUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUserNameSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your Username"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etNameSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your First Name"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etLastNameSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your Last Name"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etPhoneSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your Phone Number"
+            android:inputType="textPhonetic"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etAlterPhoneSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your Alternate Phone Number"
+            android:inputType="textPhonetic"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etEmailSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etAlterEmailSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your Alternate email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etPasswordSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your password"
+            android:inputType="textPassword"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/spinnerSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_background_rounded"
+            android:entries="@array/spinner_type"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/btnSubmitSignUp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_button_rounded"
+            android:padding="10dp"
+            android:text="SIGN UP"
+            android:textColor="@color/WHITE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvSigninSignUp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:text="Already have an account?"
+        android:textColor="@color/WHITE" />
+
+    <TextView
+        android:id="@+id/tvSigninSignUp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="SIGN IN"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</RelativeLayout>

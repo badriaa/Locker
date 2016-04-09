@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rootLayoutMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:gravity="start"
+            android:text="@string/profile"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/etUserNameMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your Username"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etNameMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your First Name"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etLastNameMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your Last Name"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etPhoneMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your Phone Number"
+            android:inputType="phone"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etAlterPhoneMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your Alternate Phone Number"
+            android:inputType="phone"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etEmailMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etAlterEmailMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Your Alternate email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etPasswordMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_background_rounded"
+            android:hint="Enter Updated password"
+            android:inputType="textPassword"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/btnEditProfileUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_button_rounded"
+            android:text="EDIT"
+            android:textColor="@color/WHITE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnSaveProfileUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_rounded"
+            android:text="Save"
+            android:textColor="@color/WHITE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </LinearLayout>
+</ScrollView>

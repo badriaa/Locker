@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:weightSum="3">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5"
+        android:src="@drawable/ic_profile" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNameUserItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Full Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvUsernameUserItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Username"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/tvEmailUserItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="email"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/tvPhoneUserItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Phone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/BLACK" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivPopupUserItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="0.5"
+        android:src="@drawable/ic_popupmenu" />
+</LinearLayout>
